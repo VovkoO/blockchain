@@ -257,7 +257,7 @@
                     })
                     .catch(function (error) {
                         vm.success = null;
-                        vm.error = error.data.message;
+                        vm.error = error.response.data.message;
                         vm.wallet = null;
                         vm.funds = 0;
                         vm.walletLoading = false;
@@ -280,7 +280,7 @@
                     })
                     .catch(function (error) {
                         vm.success = null;
-                        vm.error = error.data.message;
+                        vm.error = error.response.data.message;
                         vm.wallet = null;
                         vm.funds = 0;
                         vm.walletLoading = false;
